@@ -1,16 +1,167 @@
-# React + Vite
+📝 Notes App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A clean and minimal multi-tab Notes Management App built using modern frontend technologies.
+This app allows users to create, organize, search, archive, and manage notes efficiently — all powered by Local Storage (no backend required).
 
-Currently, two official plugins are available:
+🚀 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🔗 [Add your deployed link here]
+🔗 [Add your GitHub repo link here]
 
-## React Compiler
+✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+📝 Create, edit, and delete notes
 
-## Expanding the ESLint configuration
+📂 Multi-tab view:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Active Notes
+
+Archived Notes
+
+Trash
+
+🔍 Real-time Search functionality
+
+♻️ Restore notes from Archive or Trash
+
+🗑️ Permanent delete from Trash
+
+💾 Persistent data using Browser LocalStorage
+
+⚡ Instant UI updates without page reload
+
+📱 Responsive Design (Mobile + Desktop)
+
+🧠 How It Works
+
+This application uses Local Storage to simulate a backend database.
+
+All notes are stored as JSON in the browser.
+
+Each note contains:
+
+id
+
+title
+
+content
+
+createdAt
+
+isArchived
+
+isDeleted
+
+Data is filtered dynamically based on state to show:
+
+Active notes → !isArchived && !isDeleted
+
+Archived notes → isArchived
+
+Trash notes → isDeleted
+
+Search works by filtering notes based on title/content match.
+
+🛠️ Tech Stack
+
+HTML5
+
+CSS3
+
+JavaScript (ES6+)
+
+LocalStorage API
+
+(If you used React, replace with React, Hooks, etc.)
+
+📂 Folder Structure
+notes-app/
+│
+├── index.html
+├── style.css
+├── script.js
+├── assets/
+└── README.md
+📸 Screenshots
+
+Add screenshots here for better presentation.
+
+1️⃣ Create Note
+
+User enters title & content
+
+Unique ID generated
+
+Saved in LocalStorage
+
+UI updates instantly
+
+2️⃣ Archive Note
+
+Moves note from Active → Archive
+
+Updates state flag
+
+3️⃣ Move to Trash
+
+Soft delete functionality
+
+Note can be restored
+
+4️⃣ Search
+
+Filters notes dynamically
+
+Case-insensitive matching
+
+📌 Why LocalStorage?
+
+No backend needed
+
+Fast and simple
+
+Perfect for small productivity apps
+
+Great for understanding state management
+
+🧪 Future Improvements
+
+🌙 Dark Mode
+
+🏷️ Add Tags & Categories
+
+☁️ Cloud Sync (Firebase / Backend)
+
+🔐 Authentication
+
+📅 Sorting & Filtering Options
+
+🧠 Rich Text Editor
+
+🎯 Learning Outcomes
+
+Through this project, I practiced:
+
+DOM manipulation
+
+State management without backend
+
+Filtering and array methods
+
+UI state separation (Active / Archive / Trash)
+
+Search logic implementation
+
+Clean component-based thinking (if React used)
+
+📄 License
+
+This project is open-source and available under the MIT License.
+
+👨‍💻 Author
+
+Rajat Sharma
+
+GitHub: github.com/rajatbhargavv
+
+LinkedIn: www.linkedin.com/in/rajat-sharrmaa
