@@ -1,5 +1,5 @@
 import React from 'react'
-import Header from './components/header'
+import Header from './components/Header'
 import useNotes from './hooks/useNotes'
 import NotesGrid from './components/NotesGrid'
 import NoteModal from './components/NoteModal'
